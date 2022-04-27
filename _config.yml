@@ -49,6 +49,7 @@ twitter_username: aoenth
 github_username:  aoenth
 
 header_pages:
+  - about.md
   - blog.html
 
 plugins:
