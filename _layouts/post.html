@@ -10,10 +10,7 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
-      {% assign author = site.authors | where: 'short_name', page.author | first %}
-      {% if author %}
-        - <a href="{{ author.url }}">{{ author.name }}</a>
-      {% endif %}
+        - <a href="/about">Kevin Peng</a>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">

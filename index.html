@@ -1,0 +1,23 @@
+---
+title: Lastest Post
+---
+
+{%- if site.posts.size > 0 -%}
+  <h2 class="post-list-heading">{{ page.title }}</h2>
+  {% assign post = site.posts | first %}
+  <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+      <h1 class="post-title p-name" itemprop="name headline">{{ post.title | escape }}</h1>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }} - <a href="/about">Kevin Peng</a></span>
+    </header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+      {{ post.content }}
+    </div>
+
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  </article>
+{% endif %}
+
