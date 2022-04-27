@@ -1,7 +1,5 @@
 ---
-layout: page
 title: About
-permalink: /about/
 ---
 
 Welcome! My name is Kevin and I’m a passionate iOS developer with professional experience building high quality apps. My experience range from developing appealing and responsive user interfaces to managing complex data models.

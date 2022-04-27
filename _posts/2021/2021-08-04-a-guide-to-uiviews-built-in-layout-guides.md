@@ -1,6 +1,7 @@
 ---
 title: "A Guide to UIView's Built-in Layout Guides"
 date: "2021-08-04T23:42:17Z"
+author: kevin
 ---
 
 Since iOS 9 there has been a newcomer in the world of Auto Layout: UILayoutGuide. I knew they exist, but didn't know they were anything useful. When I wrote programmatic UIKit, I just used the supposedly standard 8 point margin. This is acceptable when there were no notches and safe areas.
