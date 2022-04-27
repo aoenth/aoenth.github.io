@@ -6,11 +6,14 @@ author: kevin
 
 Since iOS 9 there has been a newcomer in the world of Auto Layout: UILayoutGuide. I knew they exist, but didn't know they were anything useful. When I wrote programmatic UIKit, I just used the supposedly standard 8 point margin. This is acceptable when there were no notches and safe areas.
 
+```swift
 aView.topAnchor.constraint(equalTo: view.topAnchor, constant: 8).isActive = true
 aView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8).isActive = true
 aView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8).isActive = true
+```
 
 Then later I found from auto-complete that these "system spacing" equivalents exist. Along with the `NSLayoutConstraint.activate([...])` syntax. Without doing any research, the multiplier sounds like it might work better with dynamic type and accessibility, but I didn't like it because it only supports iOS 11 or later, and I have an app that I still want to support iOS 10. Also notice the first and second items are swapped for the trailing and bottom constraints. Without swapping it or having a negative multiplier feels like it should work, but no luck so far.
+
 ```swift
 NSLayoutConstraint.activate([
     aView.topAnchor.constraint(equalToSystemSpacingBelow: view.topAnchor, multiplier: 1),
