@@ -39,17 +39,18 @@ defaults:
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-# title: Solid Apps
-# email: peng.kevin@me.com
-# description: >- # this means to ignore newlines until "baseurl:"
-#   Welcome! My name is Kevin and I’m a passionate iOS developer with professional experience building high quality apps. My experience range from developing appealing and responsive user interfaces to managing complex data models.
-# baseurl: "" # the subpath of your site, e.g. /blog
-# url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: aoenth
-# github_username:  aoenth
-# 
-# # Build settings
-# theme: minima
+title: Solid Apps
+email: peng.kevin@me.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Welcome! My name is Kevin and I’m a passionate iOS developer with professional experience building high quality apps. My experience range from developing appealing and responsive user interfaces to managing complex data models.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: aoenth
+github_username:  aoenth
+
+header_pages:
+  - blog.html
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
