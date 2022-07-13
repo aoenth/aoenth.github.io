@@ -47,7 +47,7 @@ How about 3 digits?
 
 `0xFF0000 >> ?? = 0x000FF0`
 
-That is `16711680 >> ?? = 4080 = 4096`, which is 163 or 24^3, or 212. The `??` in the equation is 12.
+That is `16711680 >> ?? = 4080 = 4096`, which is $$ 16^3 $$ or $$ (2^4)^3 $$, or $$ 2^{12} $$. The `??` in the equation is 12.
 
 So we can conclude that in binary shifting, the number of digits you want to shift, say,`x`, is equal to the number after the `>>` operator. But in hexadecimal, that number can be determined by:
 
@@ -59,7 +59,7 @@ $$\begin{aligned} 16^x &= (2^4)^x \\
 
 And now if we just take the exponents:
 
-$$ log_2 2^{4x} = 4x $$
+$$ log_2 (2^{4x}) = 4x $$
 
 We get 4 times the original `x`. In other words, each bit shift in hexadecimal is 4 times that of binary.
 
