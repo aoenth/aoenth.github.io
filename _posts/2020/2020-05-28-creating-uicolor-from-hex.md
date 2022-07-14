@@ -67,7 +67,7 @@ We get 4 times the original `x`. In other words, each bit shift in hexadecimal i
 
 Going back to our original problem. We now know how to bit shift in hexadecimal, we can write something like:
 
-https://gist.github.com/aoenth/80483e698b7314dadcd3707a6c55c85c
+{% gist 80483e698b7314dadcd3707a6c55c85c %}
 
 We create a convenience initializer, and decompose the input hexadecimal number into red, green and blue components. Next we shift all of them to 2 digits, and divide the resulting value by `0xFF` to get a CGFloat value between 0 to 1, which is what Swift wants in order to create a UIColor using its designated initializer.
 
