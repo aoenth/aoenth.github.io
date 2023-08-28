@@ -1,6 +1,6 @@
 ---
 title: "Wubi Practice"
-date: "2023-08-27T23:40:00-0500"
+date: "2023-08-28T03:10:00-0500"
 author: kevin
 ---
 
