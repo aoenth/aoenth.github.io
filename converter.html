@@ -1,0 +1,55 @@
+---
+title: Converter
+permalink: converter
+---
+
+<head>
+    <style>
+
+        textarea {
+            width: 100%;
+            min-height: 3rem;
+            max-width: 1024px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            body {
+                margin-top: 36px;
+                padding: 0;
+            }
+            #buttonContainer {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: #f2f2f2;
+                padding: 10px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Source:
+    </div>
+    <textarea id="input"></textarea>
+    <div>
+        Output:
+    </div>
+    <textarea id="output"></textarea>
+    <div id="buttonContainer">
+        <button id="toQwerty">To QWERTY</button>
+        <button id="toDvorak">To DVORAK</button>
+        <button id="copyResult">Copy Result</button>
+    </div>
+</body>
+
+<script src="dvorak.js">
+</script>

@@ -53,6 +53,7 @@ github_username:  aoenth
 header_pages:
   - about.md
   - blog.html
+  - converter.html
 
 plugins:
   - jekyll-feed
