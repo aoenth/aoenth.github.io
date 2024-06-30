@@ -9,7 +9,7 @@ What do I do:
 
 * Sketch, design and prototype mobile user interfaces for various screen sizes
 * Write fully object-oriented programs in Objective-C and/or Swift
-* Write Universal apps using SwiftUI with Swift 5.9 for iOS and macOS
+* Write Universal apps using SwiftUI with Swift 6 for iOS and macOS
 * Write full stack web applications using server-side Swift (Vapor)
 * Animation, physics simulation and game programming using Core Animation, UIKit and SpriteKit
 * Write apps that work with the camera and use computer vision for object recognition
